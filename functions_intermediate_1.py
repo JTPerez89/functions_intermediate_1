@@ -77,9 +77,8 @@ dojo = {
 def printInfo(dic):
     for key, value in dic.items():
         print(len(value), key)
-        if isinstance(value, list):
-            for value in value:
-                print(value)
+        for childValue in value:
+            print(childValue)
 
         
 
